@@ -1,0 +1,21 @@
+---
+title: "Workshop: Game Day"
+details:
+partner: Tag Labs, iSL
+partner_page: http://taglabs.org/
+date: 2017-04-09 17:53 UTC
+event_date: July 29th 2017
+timeframe: 9am-5pm
+location: iStrategyLabs
+address: 641 S St NW, Fl 1, Washington, DC 20001
+google_address: https://goo.gl/maps/Za1iLVCpufo
+recap:
+tbd:
+register:
+done: yes
+---
+
+<div class="m-content__event">
+  <p> Video game building workshop + friendly Mario Kart tournament with pizza and beverages! <br> Coffee and snacks all day.</p>
+
+</div>

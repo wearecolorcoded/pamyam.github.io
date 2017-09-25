@@ -1,0 +1,42 @@
+$pop: #ef6c00;
+$white: #fff;
+$blue: #4ecdc4;
+$turquoise: #A3EFE2;
+$deep-turquoise: #40e0d0;
+$other-grey: #E2DDD9;
+$peach: #FFCFBC;
+$black: #000;
+$light-grey: #F7F7F7;
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+     -moz-#{$name}: #{$argument};
+      -ms-#{$name}: #{$argument};
+       -o-#{$name}: #{$argument};
+          #{$name}: #{$argument};
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content };
+  @-moz-keyframes #{$name}    { @content };
+  @-ms-keyframes #{$name}     { @content };
+  @-o-keyframes #{$name}      { @content };
+  @keyframes #{$name}         { @content };
+}
+
+@mixin highlight($height, $margin-top) {
+  display:block;
+  content:'';
+  width:100%;
+  height:#{$height};
+  background: $turquoise;
+}
+
+// extends here so I dont need to create a new page
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

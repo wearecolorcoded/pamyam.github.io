@@ -1,0 +1,42 @@
+---
+title: Events
+---
+
+<div class="m-content__header-block">
+  <div class="m-content__header-highlight">
+    <h1 name="events">upcoming events</h1>
+  </div>
+</div>
+<div class="col-sm-10 col-md-10 col-lg-10 m-content__block">
+  <% upcoming_events.each do |event| %>
+    <%= render_partial "partials/events/event.html.erb", locals: { event: event } %>
+  <% end %>
+</div>
+
+<div class="m-content__header-block">
+  <div class="m-content__header-highlight">
+    <h1 name="events">past events</h1>
+  </div>
+</div>
+<div class="col-sm-10 col-md-10 col-lg-10 m-content__block">
+  <% past_events.each do |event| %>
+    <%= render_partial "partials/events/event.html.erb", locals: { event: event } %>
+  <% end %>
+</div>
+
+<div class="m-content__events-pictures">
+  <% ["https://dl.dropboxusercontent.com/s/rk9inkl2lmm2ekd/November%2005%2C%202016_IMG_8458.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/ux4ih5v0qs1mq13/November%2005%2C%202016_IMG_8482.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/8aogp3rx28dvtrx/November%2005%2C%202016_IMG_8522.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/r0zy40hqxsjuw96/November%2005%2C%202016_IMG_8516.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/99xxeh1pet9r7bw/November%2005%2C%202016_IMG_8570-2.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/1wgcrv1iceqgi96/November%2005%2C%202016_IMG_8670.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/vnn5mygxijvp31t/November%2006%2C%202016_IMG_8884.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/21jpjlcjjlcxbs7/November%2005%2C%202016_IMG_8719-2.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/48t2qoyvmh32qnq/November%2005%2C%202016_IMG_8723-2.jpg?dl=0",
+  "https://dl.dropboxusercontent.com/s/c0fjz0oj0a0zvly/November%2005%2C%202016_IMG_8757-2.jpg?dl=0",].shuffle.take(4).each do |img| %>
+    <div class="m-content__events-pictures-container">
+      <img src="<%= img %>">
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,23 @@
+---
+title: "Unhackathon: Design Thinking w/ IBM and other workshops"
+details:
+partner:
+partner_page:
+date: 2017-09-18 16:27 UTC
+event_date: Sept 13th 2017
+timeframe: 830am-5pm
+location: iSL
+address: 641 S St NW, Fl 1, Washington, DC 20001
+google_address: https://goo.gl/maps/Za1iLVCpufo
+recap:
+type: Unhackathon
+tbd: yes
+register:
+img: "https://dl.dropboxusercontent.com/s/87s0y5onna94uua/blue2x1.jpg?dl=0"
+---
+
+<div class="m-content__event">
+  <p> Color Coded and IBM are hosting a one day event that’ll mix learning, creating, wellness, and overall good vibes, while empowering women founders, creatives, and ideators. </p>
+</div>
+
+

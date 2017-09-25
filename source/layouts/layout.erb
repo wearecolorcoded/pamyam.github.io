@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/ico" sizes="64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x28.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x14.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#f5af13">
+    <meta name="theme-color" content="#f5af13">
+    <meta name="google-site-verification" content="iyb7_Ae1ZvT9Y1DuxOW9XZ6l_HOOFAtKXKh2Gg9w3F0" />
+
+    <meta name="description" content="Community, Creativity, Wellness.">
+    <link rel="canonical" href="http://wearecolorcoded.us">
+    <meta property="og:description" content="Community, Creativity, Wellness.">
+    <meta property="fb:app_id" content="683221178510796">
+    <meta property="og:image" content="http://wearecolorcoded.us/images/tagline.jpg">
+    <meta property="og:site_name" content="Color Coded">
+    <meta property="og:title" content="Community, Creativity, Wellness.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://wearecolorcoded.us">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Color Coded">
+    <meta name="twitter:creator" content="@pam_yam">
+    <meta name="twitter:title" content="Community, Creativity, Wellness.">
+    <meta name="twitter:description" content="Community, Creativity, Wellness.">
+    <meta name="twitter:image:src" content="http://wearecolorcoded.us/images/tagline.jpg">
+    <title><%= current_page.data.title || "Color Coded" %></title>
+
+    <%= stylesheet_link_tag "all" %>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  </head>
+
+  <body class="<%= page_classes %> container-fluid">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=683221178510796";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="body-content">
+
+      <%= render_partial "partials/layout/header.html.erb" %>
+
+      <div class="m-content">
+        <%= yield %>
+        <%= render_partial "partials/layout/footer.html.erb" %>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <%= javascript_include_tag  "all" %>
+    </div>
+  </body>
+</html>
